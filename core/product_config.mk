@@ -181,7 +181,7 @@ include $(BUILD_SYSTEM)/device.mk
 
 # A ORION build needs only the ORION product makefiles.
 ifneq ($(ORION_BUILD),)
-  all_product_configs := $(shell ls device/*/$(ORION_BUILD)/orion.mk)
+  all_product_configs := $(shell find device -path "*/$(ORION_BUILD)/orion.mk")
 else
   ifneq ($(strip $(TARGET_BUILD_APPS)),)
   # An unbundled app build needs only the core product makefiles.
