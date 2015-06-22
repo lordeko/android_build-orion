@@ -595,7 +595,9 @@ else if get_stage("%(bcb_dev)s") == "3/3" then
   script.Print("  \ \ \_\ \ \ \/ \ \ \/\ \L\ \/\ \/\ \ \ \L\ \\ \ \/ ")
   script.Print("   \ \_____\ \_\  \ \_\ \____/\ \_\ \_\ \____/ \ \_\ ")
   script.Print("    \/_____/\/_/   \/_/\/___/  \/_/\/_/\/___/   \/_/  ")
-
+  
+  script.Print("Flash teleport complete")
+  script.Print("Welcome to our universe!") 
 
   if OPTIONS.wipe_user_data:
     system_progress -= 0.1
