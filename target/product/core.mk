@@ -53,7 +53,6 @@ PRODUCT_PACKAGES += \
     TeleService \
     VpnDialogs \
     MmsService \
-    CMFileManager \
     LockClock
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_base.mk)
