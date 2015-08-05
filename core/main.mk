@@ -205,10 +205,15 @@ endif
 requires_openjdk := false
 ifeq ($(LEGACY_USE_JAVA6),)
 ifeq ($(HOST_OS), linux)
+# Allow compilation with Oracle Java 7
+# To use, set ORACLE_JDK7 in environment or board config.
+ifneq ($(ORACLE_JDK7),)
+requires_openjdk := false
+else
 requires_openjdk := true
 endif
 endif
-
+endif
 
 # Check for the current jdk
 ifeq ($(requires_openjdk), true)
