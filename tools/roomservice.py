@@ -45,8 +45,8 @@ default_manifest = ".repo/manifest.xml"
 custom_local_manifest = ".repo/local_manifests/roomservice.xml"
 custom_default_revision = "lp5.1"
 custom_dependencies="orion.dependencies"
-org_manifest = "TeamOrion"  # leave empty if org is provided in manifest
-org_display = "TeamOrion"  # needed for displaying
+org_manifest = "TeamOrion-Devices"  # leave empty if org is provided in manifest
+org_display = "TeamOrion-Devices"  # needed for displaying
 
 github_auth = None
 
